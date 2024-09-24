@@ -1,0 +1,27 @@
+{
+  "name": "kyberswap-api-example",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "private": true,
+  "scripts": {
+    "lint": "eslint \"src/**/*.ts\"",
+    "build": "tsc",
+    "dev": "ts-node-dev --respawn --transpile-only src/index.ts",
+    "start": "node ."
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.12",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.5.4"
+  },
+  "dependencies": {
+    "@kyberswap/ks-sdk-core": "^1.1.5",
+    "axios": "^1.7.2",
+    "bignumber.js": "^9.1.2",
+    "jsbi": "3.1.4",
+    "numbro": "^2.5.0",
+    "viem": "^2.21.14",
+    "zod": "^3.23.8"
+  }
+}
